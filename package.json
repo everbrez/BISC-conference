@@ -1,0 +1,22 @@
+{
+  "name": "bisc-conference",
+  "version": "1.0.0",
+  "description": "```bash\r npm start\r ```",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"./**/*.css,./**/*.html,./**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everbrez/BISC-conference.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/everbrez/BISC-conference/issues"
+  },
+  "homepage": "https://github.com/everbrez/BISC-conference#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
