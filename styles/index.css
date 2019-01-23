@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 
-span, p {
+body {
   color: #5b5b5b;
 }
 
@@ -193,4 +193,59 @@ span, p {
   width: 100%;
   background-image: url(../images/keyDay.png);
   background-size: contain;
+}
+
+/* guests */
+.index-guests {
+  margin: 36px auto 0;
+  width: 62.5%;
+  max-width: 1200px;
+  font-size: 0;
+}
+
+.guests-info {
+  box-sizing: border-box;
+  width: 104%;
+  margin-right: -4%;
+  overflow: visible;
+}
+
+.guests-card {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 3.8461538%;
+  width: 264px;
+  height: 140px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .11);
+  transition: box-shadow .3s ease-in-out;
+}
+
+.guests-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .21);
+}
+
+.guest-img {
+  float: left;
+  margin-top: 21px;
+  margin-left: 20px;
+}
+
+.guest-identity {
+  float: right;
+  margin-top: 45px;
+  margin-right: 32px;
+  font-size: 16px;
+  text-align: center;
+  color: #105731;
+}
+
+.guest-name {
+  font-weight: bold;
+}
+
+.guest-institution {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #8e8e8e;
 }
