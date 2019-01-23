@@ -16,7 +16,7 @@ a:hover {
   color: #105731;
 }
 
-span, p {
+body {
   color: #5b5b5b;
 }
 
@@ -202,3 +202,102 @@ span, p {
   background-image: url(../images/keyDay.png);
   background-size: contain;
 }
+
+/* guests */
+.index-guests {
+  margin: 36px auto 0;
+  width: 62.5%;
+  max-width: 1200px;
+  font-size: 0;
+}
+
+.guests-info {
+  box-sizing: border-box;
+  width: 104%;
+  margin-right: -4%;
+  overflow: visible;
+}
+
+.guests-card {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 3.8461538%;
+  width: 264px;
+  height: 140px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .11);
+  transition: box-shadow .3s ease-in-out;
+}
+
+.guests-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .21);
+}
+
+.guest-img {
+  float: left;
+  margin-top: 21px;
+  margin-left: 20px;
+}
+
+.guest-identity {
+  float: right;
+  margin-top: 45px;
+  margin-right: 32px;
+  font-size: 16px;
+  text-align: center;
+  color: #105731;
+}
+
+.guest-name {
+  font-weight: bold;
+}
+
+.guest-institution {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+/* sponsor */
+.index-sponsor {
+  margin: 73px auto 0;
+  width: 62.5%;
+  max-width: 1200px;
+  font-size: 0;
+}
+
+.sponsor-container {
+  box-sizing: border-box;
+  width: 107%;
+  margin-right: -7%;
+}
+
+.sponsor-item {
+  display: inline-block;
+  margin: 40px 6.542056% 5px 0;
+  width: 237px;
+  height: 60px;
+}
+
+.sponsor-acknowledgement {
+  float: right;
+  margin-top: 40px;
+  margin-right: 6.542056%;
+  padding-left: 12px;
+  height: 60px;
+  border-left: 6px solid #959595;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.sponsor-acknowledgement p{
+  padding-top: 6px;
+  clear: both;
+  font-weight: bold;
+}
+
+.sponsor-acknowledgement div {
+  float: right;
+}
+
+/* footer */
