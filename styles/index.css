@@ -23,6 +23,7 @@ span, p {
   display: block;
   margin: 0 auto;
   height: 80px;
+  width: 62.5%;
   max-width: 1200px;
 }
 
@@ -59,7 +60,7 @@ span, p {
 .menu {
   display: inline-block;
   margin-top: 30px;
-  margin-left: 176px;
+  margin-left: 14.6666667%;
   font-size: 0;
 }
 
@@ -98,10 +99,10 @@ span, p {
 /* content */
 .index-content {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 50px auto 45px;
+  width: 62.5%;
   max-width: 1200px;
-  padding-top: 50px;
-  height: 409px;
+  height: 314px;
 }
 
 .index-news {
@@ -151,7 +152,7 @@ span, p {
 
 .index-conference {
   float: right;
-  max-width: 574px;
+  max-width: 47.83333333%;
 }
 
 .index-conference-detail {
@@ -163,3 +164,33 @@ span, p {
   line-height: 1.5em;
 }
 
+/* schedule */
+.index-schedule {
+  width: 100%;
+  height: 400px;
+  font-size: 0;
+  background-color: rgb(52, 87, 69);
+}
+
+.schedule-container {
+  margin: 0 auto;
+  padding: 35px 0 55px;
+  width: 62.5%;
+  max-width: 1200px;
+}
+
+.schedule-title {
+  border-color: #fff;
+}
+
+.schedule-title span {
+  color: #fff;
+}
+
+.schedule-timeline {
+  margin-top: 55px;
+  padding-top: 16.3333333%;
+  width: 100%;
+  background-image: url(../images/keyDay.png);
+  background-size: contain;
+}
