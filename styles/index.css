@@ -249,3 +249,47 @@ body {
   font-size: 14px;
   color: #8e8e8e;
 }
+
+/* sponsor */
+.index-sponsor {
+  margin: 73px auto 0;
+  width: 62.5%;
+  max-width: 1200px;
+  font-size: 0;
+}
+
+.sponsor-container {
+  box-sizing: border-box;
+  width: 107%;
+  margin-right: -7%;
+}
+
+.sponsor-item {
+  display: inline-block;
+  margin: 40px 6.542056% 5px 0;
+  width: 237px;
+  height: 60px;
+}
+
+.sponsor-acknowledgement {
+  float: right;
+  margin-top: 40px;
+  margin-right: 6.542056%;
+  padding-left: 12px;
+  height: 60px;
+  border-left: 6px solid #959595;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.sponsor-acknowledgement p{
+  padding-top: 6px;
+  clear: both;
+  font-weight: bold;
+}
+
+.sponsor-acknowledgement div {
+  float: right;
+}
+
+/* footer */
