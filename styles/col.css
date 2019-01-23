@@ -1,0 +1,16 @@
+/* common style */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* col-banner */
+.col-banner-container {
+  text-align: center;
+}
+
+.col-banner-container .col-banner {
+  width: 100%;
+}
+
+/* location */
