@@ -8,6 +8,14 @@ a {
   text-decoration: none;
 }
 
+a:visited, a:active {
+  color: inherit;
+}
+
+a:hover {
+  color: #105731;
+}
+
 span, p {
   color: #5b5b5b;
 }
