@@ -216,6 +216,13 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .menu {
+    width: 75%;
+    right: -75%;
+  }
+}
+
 /* banner end */
 
 /* slider */
