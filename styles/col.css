@@ -221,3 +221,36 @@
     text-align: center;
   }
 }
+
+
+/* news */
+
+.content-main .news-container {
+  margin-top: 0;
+}
+
+/* abstract */
+.upload-btn {
+  display: block;
+  margin-top: 2em;
+  border: none;
+  background: #105731;
+  color: white;
+  width: 336px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.upload-btn:hover {
+  background: #105731cc;
+}
+
+.abstract-template {
+  display: inline-block;
+  padding: .4em .6em;
+}
