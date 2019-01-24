@@ -258,7 +258,7 @@
   padding: .4em .6em;
 }
 
-.map-container {
+#map-container {
   width: 100%;
   height: 500px;
 }
