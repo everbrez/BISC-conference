@@ -136,9 +136,14 @@
   <script src="../scripts/col.js"></script>
   <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8VElAh7bwpYxTX9qXnkZ02aPtfl2qR6Z"></script>
   <script>
-    var map = new BMap.Map("map-container");
-    var point = new BMap.Point(116.404, 39.915); 
-    map.centerAndZoom(point, 15);
+    var bm = new BMap.Map("map-container");
+    bm.centerAndZoom('广州 长隆酒店', 19);
+    bm.addControl(new BMap.NavigationControl());
+    bm.enableScrollWheelZoom();
+    var local = new BMap.LocalSearch(bm, {
+		renderOptions:{map: bm, zoom: 19}
+	});
+	  local.search("广州 长隆酒店");
   </script>
 </body>
 
