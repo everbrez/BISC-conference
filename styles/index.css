@@ -67,9 +67,8 @@ body {
 }
 
 .menu {
-  display: inline-block;
+  float: right;
   margin-top: 30px;
-  margin-left: 14.6666667%;
   font-size: 0;
 }
 
@@ -107,9 +106,28 @@ body {
   clear: both;
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+  outline: none;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 8%;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 1;
+}
+
 .swiper-pagination-bullet-active {
   width: 20px;
   height: 10px;
+  border-radius: 10px;
   background-color: #105731;
 }
 
