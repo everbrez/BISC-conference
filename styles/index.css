@@ -41,7 +41,6 @@ body {
   display: block;
   margin: 0 auto;
   height: 80px;
-  width: 62.5%;
   max-width: 1200px;
   overflow: hidden;
 }
@@ -253,7 +252,6 @@ body {
 .index-content {
   box-sizing: border-box;
   margin: 50px auto 45px;
-  width: 62.5%;
   max-width: 1200px;
   height: 314px;
 }
@@ -329,7 +327,6 @@ body {
 .schedule-container {
   margin: 0 auto;
   padding: 35px 0 55px;
-  width: 62.5%;
   max-width: 1200px;
 }
 
@@ -352,7 +349,6 @@ body {
 /* guests */
 .index-guests {
   margin: 36px auto 0;
-  width: 62.5%;
   max-width: 1200px;
   font-size: 0;
 }
@@ -407,7 +403,6 @@ body {
 /* sponsor */
 .index-sponsor {
   margin: 73px auto 0;
-  width: 62.5%;
   max-width: 1200px;
   font-size: 0;
 }
@@ -457,7 +452,6 @@ body {
 
 .footer-main {
   margin: 54px auto 0;
-  width: 62.5%;
   height: 206px;
   max-width: 1200px;
   font-size: 0;

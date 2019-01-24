@@ -366,11 +366,18 @@
   <script src="../scripts/swiper.min.js"></script>
   <script>        
       var mySwiper = new Swiper ('.swiper-container', {
+        speed: 500,
+        loop: true,
         autoHeight: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
           currentClass: 'swiper-bullet-active',
+        },
+        autoplay: {
+          delay: 5000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
         },
       })        
   </script>
