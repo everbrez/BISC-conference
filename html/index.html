@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/swiper.min.css">
   <title>广东省化生学术会议</title>
 </head>
 <body>
@@ -46,6 +47,21 @@
 
   <!-- swiper start -->
   <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../images/slider1.jpg" class="slide-img"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/slider2.jpg" class="slide-img"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/slider3.jpg" class="slide-img"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/slider4.jpg" class="slide-img"/>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
   </div>
 
   <!-- content -->
@@ -341,5 +357,17 @@
       <p class="copyright">&copy;2019 Copyright : SUN YAT-SEN UNIVERSITY</p>
     </div>
   </div>
+
+  <script src="../scripts/swiper.min.js"></script>
+  <script>        
+      var mySwiper = new Swiper ('.swiper-container', {
+        autoHeight: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          currentClass: 'swiper-bullet-active',
+        },
+      })        
+  </script>
 </body>
 </html>

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/everbrez/BISC-conference#readme",
   "dependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.3",
+    "swiper": "^4.4.6"
   }
 }

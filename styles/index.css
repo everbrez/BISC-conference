@@ -33,6 +33,7 @@ body {
   height: 80px;
   width: 62.5%;
   max-width: 1200px;
+  overflow: hidden;
 }
 
 .logo {
@@ -101,8 +102,16 @@ body {
 /* banner end */
 
 /* slider */
+.swiper-container .slide-img {
+  width: 100%;
+  clear: both;
+}
 
-/* slider end */
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 10px;
+  background-color: #105731;
+}
 
 /* content */
 .index-content {
@@ -178,6 +187,7 @@ body {
   height: 400px;
   font-size: 0;
   background-color: rgb(52, 87, 69);
+  clear: both;
 }
 
 .schedule-container {
