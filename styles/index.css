@@ -37,15 +37,6 @@ body {
   position: relative;
 }
 
-.banner-container {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  height: 80px;
-  max-width: 1200px;
-  overflow: hidden;
-}
-
 .logo {
   display: inline-block;
   margin: 16px 0;
@@ -146,6 +137,10 @@ body {
 
   .logo, .menu {
     float: none;
+  }
+
+  .index-content {
+
   }
 }
 
@@ -319,15 +314,21 @@ body {
   margin-top: 30px;
   height: 270px;
   font-size: 0;
+  list-style: none;
+  overflow: hidden;
 }
 
 .news-item {
-  padding-bottom: 16px;
+  height: 36px;
   font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news-item-date {
   float: right;
+  margin-left: 16.49%;
   padding: 2px 0 0;
   font-size: 14px;
   color: #949494;
@@ -343,8 +344,18 @@ body {
 }
 
 .index-conference-detail p {
-  padding-bottom: 16px;
-  line-height: 1.5em;
+  padding-bottom: 4px;
+  line-height: 1.75em;
+}
+
+@media screen and (max-width: 1300px) {
+  .index-content {
+    max-width: 980px;
+  }
+
+  .news-item-date {
+    margin-left: 16px;
+  }
 }
 
 /* schedule */
@@ -378,25 +389,33 @@ body {
   background-size: contain;
 }
 
+@media screen and (max-width: 1300px) {
+  .schedule-container {
+    max-width: 980px;
+  }
+}
+
 /* guests */
 .index-guests {
   margin: 36px auto 0;
+  padding-bottom: 73px;
   max-width: 1200px;
   font-size: 0;
+  overflow: hidden;
 }
 
 .guests-info {
   box-sizing: border-box;
   width: 104%;
   margin-right: -4%;
-  overflow: visible;
 }
 
 .guests-card {
   box-sizing: border-box;
   display: inline-block;
   margin-top: 30px;
-  margin-right: 3.8461538%;
+  margin-left: 0.2%;
+  margin-right: 3.5361538%;
   width: 264px;
   height: 140px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .11);
@@ -432,17 +451,25 @@ body {
   color: #8e8e8e;
 }
 
+@media screen and (max-width: 1300px) {
+  .index-guests {
+    max-width: 980px;
+  }
+}
+
 /* sponsor */
 .index-sponsor {
-  margin: 73px auto 0;
+  margin: 0 auto;
   max-width: 1200px;
   font-size: 0;
+  overflow: hidden;
 }
 
 .sponsor-container {
   box-sizing: border-box;
   width: 107%;
   margin-right: -7%;
+  overflow: hidden;
 }
 
 .sponsor-item {
@@ -471,6 +498,16 @@ body {
 
 .sponsor-acknowledgement div {
   float: right;
+}
+
+@media screen and (max-width: 1300px) {
+  .index-sponsor {
+    max-width: 980px;
+  }
+
+  .sponsor-acknowledgement {
+    margin-right: 13.084112%;
+  }
 }
 
 /* footer */
@@ -546,4 +583,10 @@ body {
   text-align: center;
   line-height: 1em;
   color: #b8b8b8;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer-main {
+    max-width: 980px;
+  }
 }
