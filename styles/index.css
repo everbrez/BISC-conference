@@ -333,7 +333,6 @@ body {
   box-sizing: border-box;
   margin-top: 118px;
   width: 100%;
-  height: 260px;
   background-color: #515151;
   border: 1px solid #707070;
 }
@@ -341,61 +340,59 @@ body {
 .footer-main {
   margin: 54px auto 0;
   width: 62.5%;
-  height: 164px;
+  height: 206px;
   max-width: 1200px;
+  font-size: 0;
 }
 
 .footer-logo {
-  margin-top: 46px;
-  width: 205px;
-  height: 81px;
-  float: left;
-  background-image: url(../images/footer-logo-sysu.png)
+  display: inline-block;
+  width: 25.416666667%;
 }
 
-.footer-gap {
-  display: inline-block;
-  margin-bottom: 18px;
-  height: 120px;
-  width: 5.5%;
-  margin-left: 8.1666666%;
-  border-left: 1px solid #a5a5a5;
+.footer-logo-container {
+  width: 67.2131148%;
+  padding-bottom: 38.6885246%;
+  background-image: url(../images/footer-logo-sysu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.footer-link, .footer-contact {
+.footer-link, .footer-contact, .footer-QRcode {
   display: inline-block;
-  line-height: 1.75em;
+  line-height: 2em;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-.footer-link-title {
+.footer-link {
+  width: 23%;
+}
+
+.footer-contact {
+  width: 43%;
+}
+
+.footer-link-title, .footer-contact-title {
   padding-bottom: 2px;
   font-weight: bold;
 }
 
-.footer-contact {
-  margin-right: -40px;
-  width: 530px;
-  float: right;
+.footer-QRcode {
+  width: 8.583333333%;
+  text-align: center;
 }
-
-.footer-contact-item {
-  display: inline-block;
-}
-
-.footer-contact-title {
-  padding-bottom: 30px;
-  font-weight: bold;
-}
-
-.footer-contact-item {
-  margin-right: 40px;
+.footer-QRcode-img {
+  margin-bottom: 16px;
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: url(../images/QRcode.png);
+  background-size: contain;
 }
 
 .footer-copyright {
   box-sizing: border-box;
-  height: 40px;
+  height: 42px;
   width: 100%;
   background-color: #484848;
 }
