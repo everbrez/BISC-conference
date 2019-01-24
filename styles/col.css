@@ -265,10 +265,16 @@
 
 /* register */
 .fair-info {
-  width: 100%;
+  width: auto;
+  min-width: 100%;
   border-collapse: collapse;
   font-size: 16px;
   color: #414141;
+}
+
+.fair-info-container {
+  width: 100%;
+  overflow: auto;
 }
 
 .fair-info td, .fair-info th {
@@ -307,6 +313,8 @@
 }
 
 .register-button {
+  display: inline-block;
+  line-height: 1;
   margin-top: .5em;
   border: none;
   background: none;
@@ -317,6 +325,7 @@
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color cubic-bezier(0.215, 0.610, 0.355, 1) .3s, color cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
 }
 
 .register-button:hover {
