@@ -120,6 +120,7 @@
 .content-main {
   line-height: 2;
   font-size: 14px;
+  padding: 5px;
   padding-left: 16px;
   overflow: hidden;
 }
@@ -156,10 +157,33 @@
   .content-main .guests-card {
     width: 45.55%;
     margin-right: 4.45%;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .content-main .guests-card .guest-identity {
+    margin: 22.5px 0;
+    margin-right: 32px;
+  }
+
+  .content-main .guests-card .guest-img {
+    margin: 10px 0;
+    margin-left: 20px;
   }
 
   .content-main {
     padding: 5px;
+  }
+
+  .content-main .guests-card .guest-img {
+    max-width: 40%;
+  }
+  .content-main .guests-card .guest-img img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -178,6 +202,11 @@
 
   .content-item .content-title {
     margin-bottom: 10px;
+  }
+
+  .content-main .guests-card .guest-identity {
+    margin-top: 22.5px;
+    margin-right: 16px;
   }
 }
 
