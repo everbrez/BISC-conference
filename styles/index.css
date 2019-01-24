@@ -24,6 +24,7 @@ body {
   vertical-align: middle;
   background-color: #fff;
   text-align: center;
+  box-shadow: 0px 3px 6px 0px	rgba(0, 0, 0, 0.08);
 }
 
 .banner::after {
@@ -37,12 +38,17 @@ body {
 }
 
 .logo {
+  display: inline-block;
   margin: 16px 0;
-  float: left;
   font-size: 0;
+  overflow: hidden;
 }
 
-.logo-chem {
+.logo img{
+  max-width: 100%;
+}
+
+/* .logo-chem {
   display: inline-block;
   width: 130px;
   height: 49px;
@@ -57,7 +63,7 @@ body {
   margin-right: 17px;
   margin-bottom: 4px;
   border-right: 1px solid #ececec;
-}
+} */
 
 .logo-sysu {
   display: inline-block;
@@ -73,7 +79,7 @@ body {
 }
 
 .menu-item {
-  margin-left: 37px;
+  margin-right: 37px;
   width: 64px;
   font-size: 16px;
 }
@@ -106,7 +112,24 @@ body {
   display: none;
 }
 
+@media (max-width: 1318px) {
+  .menu-item {
+    margin-right: 15px;
+  }
+
+  .login {
+    margin-left: 20px;
+  }
+
+  .menu-item:last-child {
+    margin: 0;
+  }
+}
+
 @media (max-width: 980px) {
+  .menu {
+    margin: 15px 0;
+  }
   .banner .container {
     text-align: center;
   }
