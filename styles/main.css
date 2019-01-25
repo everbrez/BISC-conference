@@ -1318,3 +1318,7 @@ body {
   cursor: pointer;
   color: #105731;
 }
+
+.footer a:hover {
+  color: inherit;
+}
