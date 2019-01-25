@@ -519,25 +519,39 @@ body {
 
 .footer-main {
   margin: 54px auto 0;
-  height: 206px;
+  /* height: 206px; */
+  padding-bottom: 28px;
   max-width: 1200px;
   font-size: 0;
 }
 
 .footer-logo {
+  vertical-align: middle;
+  position: relative;
   display: inline-block;
-  width: 25.416666667%;
+  width: 31.0833333%;
+}
+
+.footer-logo::after {
+  position: absolute;
+  content: "";
+  right: 18.230563%;
+  top: -19px;
+  height: 120px;
+  width: 1px;
+  background: #fff;
 }
 
 .footer-logo-container {
-  width: 67.2131148%;
-  padding-bottom: 38.6885246%;
+  width: 54.9597855%;
+  padding-bottom: 81px;
   background-image: url(../images/footer-logo-sysu.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .footer-link, .footer-contact, .footer-QRcode {
+  vertical-align: middle;
   display: inline-block;
   line-height: 2em;
   color: #fff;
@@ -545,11 +559,22 @@ body {
 }
 
 .footer-link {
+  position: relative;
   width: 23%;
 }
 
+.footer-link::after {
+  position: absolute;
+  content: "";
+  right: 24.6376812%;
+  top: 24px;
+  height: 120px;
+  width: 1px;
+  background: #fff;
+}
+
 .footer-contact {
-  width: 43%;
+  width: 37.33333333%;
 }
 
 .footer-link-title, .footer-contact-title {
@@ -563,10 +588,10 @@ body {
 }
 .footer-QRcode-img {
   margin-bottom: 16px;
+}
+
+.footer-QRcode-img img {
   width: 100%;
-  padding-bottom: 100%;
-  background-image: url(../images/QRcode.png);
-  background-size: contain;
 }
 
 .footer-copyright {
