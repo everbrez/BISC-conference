@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
+  // sidebar affix
   const sidebar = document.getElementsByClassName('sidebar')[0];
-
   if (sidebar) {
     const offsetTop = sidebar.offsetTop;
     const padding = 40;
@@ -18,6 +18,7 @@ window.addEventListener('load', function() {
     }
   }
 
+  // abstract upload button
   const uploadDefault = document.getElementById('upload-btn-default');
   const upload = document.getElementById('upload-btn');
   if (upload) {
@@ -39,7 +40,7 @@ window.addEventListener('load', function() {
     }, false);
   }
 
-
+  // nav-phone ver
   const navOpen = document.getElementById('nav-open');
   const navClose = document.getElementById('nav-close');
   const menu = document.getElementById('menu');
