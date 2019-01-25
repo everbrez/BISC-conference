@@ -18,28 +18,6 @@ window.addEventListener('load', function() {
     }
   }
 
-  // abstract upload button
-  const uploadDefault = document.getElementById('upload-btn-default');
-  const upload = document.getElementById('upload-btn');
-  if (upload) {
-    upload.addEventListener('click', function() {
-      if (uploadDefault) {
-        uploadDefault.click();
-      }
-    }, false);
-
-    const output = document.getElementById('upload-output');
-    uploadDefault.addEventListener('change', function(e) {
-      const files = e.target.files;
-      let outputName = '';
-      
-      for(let i = 0; i < files.length; i += 1) {
-        outputName += files[i].name
-      }
-      output.innerText = outputName;
-    }, false);
-  }
-
   // nav-phone ver
   const navOpen = document.getElementById('nav-open');
   const navClose = document.getElementById('nav-close');
