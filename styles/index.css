@@ -47,24 +47,6 @@ body {
 .logo img{
   max-width: 100%;
 }
-
-/* .logo-chem {
-  display: inline-block;
-  width: 130px;
-  height: 49px;
-  background-image: url(../images/banner-logo-chem.png)
-}
-
-.logo-gap {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 18px;
-  height: 41px;
-  margin-right: 17px;
-  margin-bottom: 4px;
-  border-right: 1px solid #ececec;
-} */
-
 .logo-sysu {
   display: inline-block;
   width: 165.24px;
@@ -137,10 +119,6 @@ body {
 
   .logo, .menu {
     float: none;
-  }
-
-  .index-content {
-
   }
 }
 
@@ -285,8 +263,10 @@ body {
 
 .index-news {
   display: block;
+  max-height: 100%;
   float: left;
   width: 49.5%;
+  overflow: hidden;
 }
 
 .content-title {
@@ -294,6 +274,9 @@ body {
   height: 26px;
   border-left: 6px solid #105731;
   font-size: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content-title span {
@@ -306,16 +289,18 @@ body {
 
 .content-title .more {
   float: right;
+  margin-left: 20px;
+  padding-top: 2px;
   color: #777;
   font-size: 14px;
 }
 
 .news-container {
   margin-top: 30px;
-  height: 270px;
+  height: 260px;
   font-size: 0;
   list-style: none;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .news-item {
@@ -336,11 +321,15 @@ body {
 
 .index-conference {
   float: right;
+  max-height: 100%;
   max-width: 47.83333333%;
+  overflow: hidden;
 }
 
 .index-conference-detail {
   margin-top: 30px;
+  max-height: 270px;
+  overflow: scroll;
 }
 
 .index-conference-detail p {
@@ -355,6 +344,12 @@ body {
 
   .news-item-date {
     margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .index-content {
+    max-width: 768px;
   }
 }
 
@@ -392,6 +387,20 @@ body {
 @media screen and (max-width: 1300px) {
   .schedule-container {
     max-width: 980px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .index-schedule {
+    height: 300px;
+  }
+
+  .schedule-container {
+    max-width: 768px;
+  }
+
+  .schedule-timeline {
+    margin-top: 45px;
   }
 }
 
@@ -457,6 +466,16 @@ body {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .index-guests {
+    max-width: 768px;
+  }
+
+  .guests-info {
+    text-align: center;
+  }
+}
+
 /* sponsor */
 .index-sponsor {
   margin: 0 auto;
@@ -507,6 +526,20 @@ body {
 
   .sponsor-acknowledgement {
     margin-right: 13.084112%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .index-sponsor {
+    max-width: 768px;
+  }
+
+  .sponsor-container {
+    padding-left: 15%;
+  }
+
+  .sponsor-acknowledgement {
+    margin-right: 25%;
   }
 }
 
@@ -613,5 +646,11 @@ body {
 @media screen and (max-width: 1300px) {
   .footer-main {
     max-width: 980px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .footer-main {
+    max-width: 768px;
   }
 }
