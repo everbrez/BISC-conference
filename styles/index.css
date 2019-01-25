@@ -659,10 +659,11 @@ body {
 }
 
 .copyright {
-  padding-top: 10px;
+  padding: 0;
   text-align: center;
-  line-height: 1em;
+  line-height: 42px;
   color: #b8b8b8;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 1300px) {
