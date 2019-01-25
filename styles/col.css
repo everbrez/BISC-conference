@@ -231,6 +231,12 @@
 
 .content-main .news-container {
   margin-top: 0;
+  height: auto;
+  overflow: auto;
+}
+
+.content-main .news-container .news-item-date {
+  margin-left: 1em;
 }
 
 /* abstract */
