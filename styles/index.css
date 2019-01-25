@@ -156,13 +156,14 @@ body {
     background: #000;
     left: 0;
     top: 0;
-    z-index: 900;
+    z-index: -1;
     opacity: 0;
     transition: background-color cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
   }
 
   .menu.show + .mask {
     opacity: .21;
+    z-index: 999;
   }
 
   .login {
