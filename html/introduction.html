@@ -13,13 +13,13 @@
 
 <body>
   <div class="banner">
-    <div class="banner-container">
+    <div class="container">
       <div class="logo">
-        <div class="logo-chem"></div>
-        <div class="logo-gap"></div>
-        <div class="logo-sysu"></div>
+        <img src="../images/banner-logo-chem.png" alt="logo" srcset="">
       </div>
-      <div class="menu">
+      <div class="menu" id="menu">
+        <span id="nav-open" class="nav nav-open"></span>
+        <span id="nav-close" class="nav-close"></span>
         <span class="menu-item">
           <a href="./index.html">首页</a>
         </span>
@@ -30,7 +30,7 @@
           <a href="./news.html">新闻通知</a>
         </span>
         <span class="menu-item">
-          <a href="#">会议注册</a>
+          <a href="./register.html">会议注册</a>
         </span>
         <span class="menu-item">
           <a href="./abstract.html">摘要征集</a>
@@ -38,13 +38,14 @@
         <span class="menu-item">
           <a href="./hotel.html">酒店住宿</a>
         </span>
+        <div class="login">
+          <a href="#">
+            <div class="login-icon"></div>
+            <span>登陆</span>
+          </a>
+        </div>
       </div>
-      <div class="login">
-        <div class="login-icon"></div>
-        <span>
-          <a href="#">登陆</a>
-        </span>
-      </div>
+      <span class="mask"></span>
     </div>
   </div>
 
@@ -287,10 +288,12 @@
     </div>
   </main>
 
+  <!-- footer -->
   <div class="footer">
     <div class="footer-main">
-      <div class="footer-logo"></div>
-      <div class="footer-gap"></div>
+      <div class="footer-logo">
+        <div class="footer-logo-container"></div>
+      </div>
       <div class="footer-link">
         <div class="footer-link-title">友情链接</div>
         <div class="footer-link-content">
@@ -311,23 +314,26 @@
           </div>
         </div>
       </div>
-      <div class="footer-gap"></div>
       <div class="footer-contact">
-        <div class="footer-contact-title">联系方式</div>
         <div class="footer-contact-content">
-          <div class="footer-contact-item">学术联系人：xxx（E-mail/Tel)</div>
-          <div class="footer-contact-item">赞助联系人：xxx（E-mail/Tel)</div>
-          <div class="footer-contact-item">注册联系人：xxx（E-mail/Tel)</div>
-          <div class="footer-contact-item">会议专用邮箱：xxxxx</div>
-          <div class="footer-contact-item">住宿联系人：xxx（E-mail/Tel)</div>
-          <div class="footer-contact-item">会以公众号：xxxxx</div>
+          <div class="footer-contact-item footer-contact-title">联系方式</div>
+          <div class="footer-contact-item">学术联系人：夏炜（xiawei5@mail.sysu.edu.cn)</div>
+          <div class="footer-contact-item">注册联系人：陈锚（gdchem2017@mail.sysu.edu.cn）</div>
+          <div class="footer-contact-item">住宿联系人：刘文婷（liuwting@mail2.sysu.edu.cn）</div>
+          <div class="footer-contact-item">赞助联系人：徐亮（xuliang33@mail.sysu.edu.cnl）</div>
+          <div class="footer-contact-item">会议专用邮箱：cnccb2019@mail.sysu.edu.cn</div>
         </div>
       </div>
+      <div class="footer-QRcode">
+        <div class="footer-QRcode-img">
+          <img src="../images/QRcode.png" />
+        </div>
+        <p class="footer-QRcode-hint">会议公众号</p>
+      </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <p class="copyright">&copy;2019 Copyright : SUN YAT-SEN UNIVERSITY</p>
-  </div>
+    <div class="footer-copyright">
+      <p class="copyright">&copy;2019 Copyright : SUN YAT-SEN UNIVERSITY</p>
+    </div>
   </div>
   <script src="../scripts/col.js"></script>
 </body>
