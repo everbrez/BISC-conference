@@ -164,7 +164,7 @@ body {
 
   .menu.show + .mask {
     opacity: .21;
-    z-index: 999;
+    z-index: 899;
   }
 
   .login {
@@ -799,10 +799,11 @@ body {
 }
 
 .copyright {
-  padding-top: 10px;
+  padding: 0;
   text-align: center;
-  line-height: 1em;
+  line-height: 42px;
   color: #b8b8b8;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 1300px) {
@@ -845,6 +846,11 @@ body {
 
   .footer-copyright {
     height: 35px;
+    font-size: 14px;
+  }
+
+  .copyright {
+    line-height: 35px;
   }
 }
 
@@ -867,11 +873,10 @@ body {
 
   .footer-copyright {
     height: 24px;
-    font-size: 12px;
   }
 
   .copyright {
-    padding-top: 6px;
+    line-height: 24px;
   }
 }
 
@@ -884,5 +889,9 @@ body {
 @media screen and (max-width: 340px) {
   .footer-main {
     max-width: 300px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
   }
 }

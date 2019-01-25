@@ -150,6 +150,7 @@
   width: 28.884%;
   max-width: 275px;
   margin-right: 4.45%;
+  margin-left: 0;
 }
 
 @media (max-width: 1300px) {
@@ -249,7 +250,21 @@
 
 #map-container {
   width: 100%;
-  height: 500px;
+  height: 470px;
+}
+
+@media (max-width: 425px) {
+  #map-container {
+    height: 235px;
+  }
+
+  .hotel-site {
+    text-align: center;
+  }
+
+  .hotel-site a {
+    display: block;
+  }
 }
 
 /* register */
