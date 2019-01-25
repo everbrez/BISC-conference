@@ -703,4 +703,7 @@ body {
   .footer-QRcode-img {
     margin-bottom: 0;
   }
+  .copyright {
+    font-size: 14px;
+  }
 }
