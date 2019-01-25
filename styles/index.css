@@ -52,24 +52,6 @@ body {
 .logo img{
   max-width: 100%;
 }
-
-/* .logo-chem {
-  display: inline-block;
-  width: 130px;
-  height: 49px;
-  background-image: url(../images/banner-logo-chem.png)
-}
-
-.logo-gap {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 18px;
-  height: 41px;
-  margin-right: 17px;
-  margin-bottom: 4px;
-  border-right: 1px solid #ececec;
-} */
-
 .logo-sysu {
   display: inline-block;
   width: 165.24px;
@@ -142,10 +124,6 @@ body {
 
   .logo, .menu {
     float: none;
-  }
-
-  .index-content {
-
   }
 }
 
@@ -291,8 +269,10 @@ body {
 
 .index-news {
   display: block;
+  max-height: 100%;
   float: left;
   width: 49.5%;
+  overflow: hidden;
 }
 
 .content-title {
@@ -300,6 +280,9 @@ body {
   height: 26px;
   border-left: 6px solid #105731;
   font-size: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content-title span {
@@ -312,16 +295,18 @@ body {
 
 .content-title .more {
   float: right;
+  margin-left: 20px;
+  padding-top: 2px;
   color: #777;
   font-size: 14px;
 }
 
 .news-container {
   margin-top: 30px;
-  height: 270px;
+  height: 260px;
   font-size: 0;
   list-style: none;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .news-item {
@@ -342,11 +327,15 @@ body {
 
 .index-conference {
   float: right;
+  max-height: 100%;
   max-width: 47.83333333%;
+  overflow: hidden;
 }
 
 .index-conference-detail {
   margin-top: 30px;
+  max-height: 270px;
+  overflow: scroll;
 }
 
 .index-conference-detail p {
@@ -361,6 +350,12 @@ body {
 
   .news-item-date {
     margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .index-content {
+    max-width: 768px;
   }
 }
 
@@ -398,6 +393,20 @@ body {
 @media screen and (max-width: 1300px) {
   .schedule-container {
     max-width: 980px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .index-schedule {
+    height: 300px;
+  }
+
+  .schedule-container {
+    max-width: 768px;
+  }
+
+  .schedule-timeline {
+    margin-top: 45px;
   }
 }
 
@@ -463,6 +472,16 @@ body {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .index-guests {
+    max-width: 768px;
+  }
+
+  .guests-info {
+    text-align: center;
+  }
+}
+
 /* sponsor */
 .index-sponsor {
   margin: 0 auto;
@@ -516,6 +535,20 @@ body {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .index-sponsor {
+    max-width: 768px;
+  }
+
+  .sponsor-container {
+    padding-left: 15%;
+  }
+
+  .sponsor-acknowledgement {
+    margin-right: 25%;
+  }
+}
+
 /* footer */
 .footer {
   box-sizing: border-box;
@@ -527,25 +560,39 @@ body {
 
 .footer-main {
   margin: 54px auto 0;
-  height: 206px;
+  /* height: 206px; */
+  padding-bottom: 28px;
   max-width: 1200px;
   font-size: 0;
 }
 
 .footer-logo {
+  vertical-align: middle;
+  position: relative;
   display: inline-block;
-  width: 25.416666667%;
+  width: 31.0833333%;
+}
+
+.footer-logo::after {
+  position: absolute;
+  content: "";
+  right: 18.230563%;
+  top: -19px;
+  height: 120px;
+  width: 1px;
+  background: #fff;
 }
 
 .footer-logo-container {
-  width: 67.2131148%;
-  padding-bottom: 38.6885246%;
+  width: 54.9597855%;
+  padding-bottom: 81px;
   background-image: url(../images/footer-logo-sysu.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .footer-link, .footer-contact, .footer-QRcode {
+  vertical-align: middle;
   display: inline-block;
   line-height: 2em;
   color: #fff;
@@ -553,11 +600,22 @@ body {
 }
 
 .footer-link {
+  position: relative;
   width: 23%;
 }
 
+.footer-link::after {
+  position: absolute;
+  content: "";
+  right: 24.6376812%;
+  top: 24px;
+  height: 120px;
+  width: 1px;
+  background: #fff;
+}
+
 .footer-contact {
-  width: 43%;
+  width: 37.33333333%;
 }
 
 .footer-link-title, .footer-contact-title {
@@ -571,10 +629,10 @@ body {
 }
 .footer-QRcode-img {
   margin-bottom: 16px;
+}
+
+.footer-QRcode-img img {
   width: 100%;
-  padding-bottom: 100%;
-  background-image: url(../images/QRcode.png);
-  background-size: contain;
 }
 
 .footer-copyright {
@@ -594,5 +652,11 @@ body {
 @media screen and (max-width: 1300px) {
   .footer-main {
     max-width: 980px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .footer-main {
+    max-width: 768px;
   }
 }
