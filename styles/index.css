@@ -463,9 +463,35 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* .schedule-container {
+  .schedule-container {
     max-width: 555px;
-  } */
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .schedule-container {
+    max-width: 375px;
+  }
+
+  .schedule-timeline {
+    margin: 20px auto 0;
+    padding-top: 200px;
+    max-width: 200px;
+    background: url(../images/timeline_mobile.png) no-repeat;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .schedule-container {
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .swiper-container {
+    max-width: 300px;
+  }
 }
 
 /* guests */
@@ -566,6 +592,10 @@ body {
 @media screen and (max-width: 340px) {
   .index-guests {
     max-width: 300px;
+  }
+
+  .guests-info {
+    padding-left: 20px;
   }
 }
 
@@ -693,7 +723,7 @@ body {
   }
 
   .sponsor-acknowledgement {
-    margin-left: -15px;
+    margin-left: 0;
   }
 }
 
