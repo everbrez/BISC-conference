@@ -717,6 +717,10 @@ body {
   .sponsor-container {
     padding-left: 55px;
   }
+
+  .sponsor-acknowledgement {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -736,7 +740,7 @@ body {
 /* footer */
 .footer {
   box-sizing: border-box;
-  margin-top: 118px;
+  margin-top: 117px;
   width: 100%;
   background-color: #515151;
   border: 1px solid #707070;
@@ -744,7 +748,6 @@ body {
 
 .footer-main {
   margin: 54px auto 0;
-  /* height: 206px; */
   padding-bottom: 28px;
   max-width: 1200px;
   font-size: 0;
@@ -849,6 +852,10 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
+  .footer {
+    margin-top: 100px;
+  }
+
   .footer-main {
     max-width: 980px;
   }
@@ -862,7 +869,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .footer {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .footer-main {
@@ -923,6 +930,10 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .footer {
+    margin-top: 50px;
+  }
+
   .footer-main {
     max-width: 340px;
   }
