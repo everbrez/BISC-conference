@@ -164,7 +164,7 @@ body {
 
   .menu.show + .mask {
     opacity: .21;
-    z-index: 999;
+    z-index: 899;
   }
 
   .login {
