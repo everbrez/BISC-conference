@@ -323,3 +323,9 @@
   display: block;
   text-indent: 1em;
 }
+
+.hotel-site img{
+  margin: 0 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

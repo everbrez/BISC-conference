@@ -71,8 +71,11 @@
           <a href="#">酒店住宿</a>
         </li>
         <ul class="sidebar-list">
-          <a class="sidebar-item" href="#news">
-            <li>酒店住宿</li>
+          <a class="sidebar-item" href="#traffic">
+            <li>交通指南</li>
+          </a>
+          <a class="sidebar-item" href="#hotel">
+            <li>附近酒店</li>
           </a>
         </ul>
       </sidebar>
@@ -80,9 +83,46 @@
       <section class="col-content-container">
         <section class="col-content-item">
           <div class="content-item">
-            <h3 class="content-title"> <span id="news">酒店住宿</span></h3>
+            <h3 class="content-title"> <span id="traffic">交通指南</span></h3>
             <div class="content-main">
-                <div id="map-container"></div> 
+              <div>
+                <li> 本次会议协助场地为广州长隆酒店。</li>
+                <li> 广州南站出发（11公里）：计程车约23分钟；轨道交通7号线（广州南站上车，汉溪长隆站下车）；</li>
+                <li> 广州东站出发（22公里）：计程车约38分钟；轨道交通3号线北延段（广州东站上车）转（体育西路站换乘）3号线（至汉溪长隆站下车）；</li>
+                <li> 广州白云机场出发（56公里）：计程车约61分钟；轨道交通3号线北延段（机场南站上车）转（体育西路站换乘）3号线（至汉溪长隆站下车）。</li>
+
+              </div>
+              <div id="map-container"></div>
+            </div>
+          </div>
+
+          <div class="content-item">
+            <h3 class="content-title"> <span id="hotel">附近酒店</span></h3>
+            <div class="content-main">
+              <li>汉溪长隆附近的酒店可参考以下网站自行选择： </li>
+            <div class="hotel-site">
+                <a href="http://hotels.ctrip.com/hotel/guangzhou32/sl4196511#ctm_ref=hod_hp_lmh_def_n_1">
+                  <img src="../images/ctrip.png">
+                </a>
+                <a href="https://hotel.fliggy.com/hotel_list3.htm?_input_charset=&_output_charset=&searchBy=&market=0&previousChannel=&cityName=%B9%E3%D6%DD&city=440100&_fmd.h._0.r=&checkIn=2019-11-19&checkOut=2019-11-20&keywords=%BA%BA%CF%AA%B3%A4%C2%A1&ttid=sem.000000736">
+                  <img src="../images/fliggy.png">
+                </a>
+                <a href="http://hotel.qunar.com/city/guangzhou/q-%E9%95%BF%E9%9A%86%E6%AC%A2%E4%B9%90%E4%B8%96%E7%95%8C#from=hotelACatalog&fromDate=2019-01-26&toDate=2019-01-27">
+                  <img src="../images/qunar.png">
+                </a>
+                <a href="http://hotel.tuniu.com/list?city=602&checkindate=2019-1-26&checkoutdate=2019-1-27&poi=16734">
+                  <img src="../images/tuniu.png">
+                </a>
+                <a href="https://www.ly.com/searchlist.html?cityid=80&sectionid=0&comedate=2019-01-25&leavedate=2019-01-26&word=%E9%95%BF%E9%9A%86%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA&wordid=756272&wordtype=5&spm0=10002.2001.1.0.1.1.2">
+                  <img src="../images/tongcheng.png">
+                </a>
+                <a href="https://hotel.meituan.com/guangzhou/">
+                  <img src="../images/meituan.png">
+                </a>
+                <a href="http://www.dianping.com/guangzhou/hotel/_%E6%B1%89%E6%BA%AA%E9%95%BF%E9%9A%86">
+                  <img src="../images/dianping.png">
+                </a>
+              </div>
             </div>
           </div>
 
@@ -141,9 +181,12 @@
     bm.addControl(new BMap.NavigationControl());
     bm.enableScrollWheelZoom();
     var local = new BMap.LocalSearch(bm, {
-		renderOptions:{map: bm, zoom: 19}
-	});
-	  local.search("广州 长隆酒店");
+      renderOptions: {
+        map: bm,
+        zoom: 19
+      }
+    });
+    local.search("广州 长隆酒店");
   </script>
 </body>
 
