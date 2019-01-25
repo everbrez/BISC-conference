@@ -189,10 +189,10 @@ body {
 
   .nav-open {
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 110%;
     right: calc(100% + 10px);
     z-index: 800;
@@ -218,6 +218,12 @@ body {
   .show .nav-close {
     display: block;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logo {
+    width: 80%;
   }
 }
 
@@ -489,7 +495,7 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-  .swiper-container {
+  .schedule-container {
     max-width: 300px;
   }
 }
@@ -817,6 +823,7 @@ body {
 .footer-QRcode {
   width: 8.583333333%;
   text-align: center;
+  white-space: nowrap;
 }
 .footer-QRcode-img {
   margin-bottom: 16px;
