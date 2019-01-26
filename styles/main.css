@@ -325,12 +325,23 @@ body {
   text-overflow: ellipsis;
 }
 
+.news-item-decor {
+  float: left;
+  margin-right: 6px;
+}
+
 .news-item-date {
   float: right;
   margin-left: 16.49%;
   padding: 2px 0 0;
   font-size: 14px;
   color: #949494;
+}
+
+.news-item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .index-conference {
