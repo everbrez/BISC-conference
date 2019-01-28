@@ -1221,6 +1221,11 @@ body {
   margin-top: 22px;
 }
 
+#content-hotel {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
 @media (max-width: 425px) {
   #map-container {
     height: 235px;
