@@ -567,6 +567,26 @@ body {
   color: #8e8e8e;
 }
 
+#introduction-schedule {
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+#introduction-schedule > thead {
+  background-color: #000;
+  color: #fff;
+}
+
+#introduction-schedule > tbody > tr:nth-child(odd) {
+  background-color: #d4d3d3;
+}
+
+#introduction-schedule > tbody td, #introduction-schedule > thead th {
+  padding: 0 16px;
+  border: 1px solid #000;
+}
+
 @media screen and (max-width: 1300px) {
   .index-guests {
     max-width: 980px;
