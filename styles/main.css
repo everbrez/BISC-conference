@@ -1242,19 +1242,41 @@ body {
 }
 
 #content-hotel {
-  width: 100%;
   margin-bottom: 16px;
+  max-width: 100%;
 }
 
 #hotel-changlong {
-  width: 100%;
   margin: 20px 0 50px;
 }
 
 #hotel-changlongPanda {
-  width: 100%;
   margin-top: 20px;
 }
+
+@media (max-width: 1050px) {
+  #hotel-changlong {
+    width: 100%;
+    height: auto;
+  }
+
+  #hotel-changlongPanda {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #hotel-changlong {
+    margin: 10px 0 25px;
+  }
+
+  #hotel-changlongPanda {
+    margin-top: 10px;
+  }
+}
+
+
 
 @media (max-width: 425px) {
   #map-container {
