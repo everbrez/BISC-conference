@@ -1380,3 +1380,25 @@ body {
 .footer a:hover {
   color: inherit;
 }
+
+.article-info {
+  font-size: 14px;
+  color: #979797;
+  line-height: 1;
+}
+
+.article-title {
+  font-size: 16px;
+  color: #575757;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.content-item header {
+  margin-bottom: 18px;
+  padding-left: 2em;
+}
+.content-item header + .content-main {
+  padding-left: 0;
+}
