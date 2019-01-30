@@ -1,4 +1,4 @@
-# BISC 会议网站项目
+# CNCCB11会议网站项目
 
 ## development
 
