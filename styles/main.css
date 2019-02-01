@@ -1197,7 +1197,7 @@ body {
   .content-main .guests-card {
     width: 45.55%;
     margin-right: 4.45%;
-    display: inline-flex;
+    /* display: inline-flex; */
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
@@ -1479,4 +1479,29 @@ body {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.guests-card, .content-main .guests-card {
+  vertical-align: top;
+  text-align: center;
+  height: 210px;
+}
+
+.content-main .guests-card {
+  height: 220px;
+}
+
+.guest-img, .content-main .guests-card .guest-img {
+  float: none;
+  display: block;
+  margin: auto;
+}
+
+.guest-identity, .content-main .guests-card .guest-identity {
+  display: block;
+  max-width: none;
+  line-height: 1.25;
+  width: 100%;
+  margin: 0;
+  margin-top: 1em;
 }
