@@ -1166,12 +1166,27 @@ body {
   width: auto;
   padding: 0;
 }
-
+.content-main .guests-info .guest-img {
+  float: left;
+  vertical-align: top;
+}
 .content-main .guests-card {
   width: 28.884%;
   max-width: 275px;
   margin-right: 4.45%;
   margin-left: 0;
+  vertical-align: top;
+}
+
+.content-main .guests-card .guest-identity {
+  float: none;
+  margin: auto 0;
+  line-height: 1.25;
+  vertical-align: top;
+}
+
+.content-main .guests-card .guest-institution {
+  line-height: 1.5;
 }
 
 @media (max-width: 1300px) {
@@ -1190,7 +1205,11 @@ body {
   }
 
   .content-main .guests-card .guest-identity {
-    margin: 22.5px 0;
+    /* margin: 22.5px 0; */
+    max-width: 50%;
+    white-space: normal;
+    margin-left: 0;
+    right: 0;
     margin-right: 32px;
   }
 
@@ -1231,7 +1250,7 @@ body {
   }
 
   .content-main .guests-card .guest-identity {
-    margin-top: 22.5px;
+    /* margin-top: 22.5px; */
     margin-right: 16px;
   }
 }
