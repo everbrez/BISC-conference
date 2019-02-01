@@ -307,6 +307,10 @@ body {
   color: #b5b5b5;
 }
 
+.content-title-info {
+  font-size: 14px;
+}
+
 .content-title .more {
   float: right;
   margin-left: 20px;
