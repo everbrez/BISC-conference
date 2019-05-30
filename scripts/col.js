@@ -35,3 +35,6 @@ window.addEventListener('load', function() {
   }, false);
 
 }, false)
+
+<img(.+)/>([\n\w\W]+?)("guest-name">)(.+)<
+<img$1 alt="$4"/>$2$3$4<
