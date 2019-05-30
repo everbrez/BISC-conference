@@ -1111,6 +1111,8 @@ body {
   width: 240px;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  position: sticky;
+  top: 40px;
 }
 
 /* main-content */
@@ -1435,6 +1437,7 @@ body {
 .hotel-chimelong {
   cursor: pointer;
   color: #105731;
+  text-decoration: #105731 underline;
 }
 
 .footer a:hover {
