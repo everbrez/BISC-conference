@@ -1510,3 +1510,17 @@ body {
   margin: 0;
   margin-top: 1em;
 }
+
+.process img{
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #eee;
+}
+
+.process figure {
+  margin: 2em 0;
+}
+
+.process figcaption {
+  text-align: center;
+}
