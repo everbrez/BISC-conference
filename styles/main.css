@@ -479,7 +479,7 @@ body {
   margin-top: 55px;
   padding-top: 16.3333333%;
   width: 100%;
-  background-image: url(../images/keyDay2.png);
+  background-image: url(../images/keyDay_desktop.png);
   background-size: contain;
 }
 
@@ -518,7 +518,7 @@ body {
     margin: 20px auto 0;
     padding-top: 200px;
     max-width: 200px;
-    background: url(../images/timeline_mobile.png) no-repeat;
+    background: url(../images/keyDay_mobile.png) no-repeat;
     background-size: contain;
   }
 }
