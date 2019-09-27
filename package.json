@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "browser-sync start --server --files \"./**/*.css,./**/*.html,./**/*.js\"",
-    "build": "rm -rf ./dist && mkdir ./dist && cp -r ./html ./dist/html && cp -r ./images ./dist/images && cp -r ./scripts ./dist/scripts && cp -r ./styles ./dist/styles"
+    "build": "rm -rf ./dist && mkdir ./dist && cp -r ./html ./dist/html && cp -r ./images ./dist/images && cp -r ./scripts ./dist/scripts && cp -r ./styles ./dist/styles && cp ./index.html ./dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/everbrez/BISC-conference#readme",
   "dependencies": {
     "browser-sync": "^2.26.3",
+    "express": "^4.17.1",
     "swiper": "^4.4.6"
   }
 }
