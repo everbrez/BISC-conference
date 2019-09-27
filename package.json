@@ -1,6 +1,7 @@
 {
-  "name": "bisc-conference",
+  "name": "cnccb-conference",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,14 +13,13 @@
     "url": "git+https://github.com/everbrez/BISC-conference.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/everbrez/BISC-conference/issues"
   },
   "homepage": "https://github.com/everbrez/BISC-conference#readme",
   "dependencies": {
     "browser-sync": "^2.26.3",
-    "express": "^4.17.1",
     "swiper": "^4.4.6"
   }
 }
