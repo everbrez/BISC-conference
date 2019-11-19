@@ -1525,3 +1525,17 @@ body {
 .process figcaption {
   text-align: center;
 }
+
+.content-main figure {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.content-main figure + figure {
+  margin-top: 1em;
+}
+
+.content-main figure img {
+  max-width: 100%;
+  height: auto;
+}
