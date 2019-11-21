@@ -1526,12 +1526,13 @@ body {
   text-align: center;
 }
 
-.content-main figure {
-  width: 100%;
+.content-main.record figure {
+  width: 75%;
+  margin: auto;
   text-align: center;
   overflow: hidden;
 }
-.content-main figure + figure {
+.content-main.content-main.record figure + figure {
   margin-top: 1em;
 }
 
