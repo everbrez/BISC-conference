@@ -1169,10 +1169,12 @@ body {
   width: auto;
   padding: 0;
 }
+
 .content-main .guests-info .guest-img {
   float: left;
   vertical-align: top;
 }
+
 .content-main .guests-card {
   width: 28.884%;
   max-width: 275px;
@@ -1487,7 +1489,8 @@ body {
   white-space: nowrap;
 }
 
-.guests-card, .content-main .guests-card {
+.guests-card,
+.content-main .guests-card {
   vertical-align: top;
   text-align: center;
   height: 210px;
@@ -1497,13 +1500,15 @@ body {
   height: 220px;
 }
 
-.guest-img, .content-main .guests-card .guest-img {
+.guest-img,
+.content-main .guests-card .guest-img {
   float: none;
   display: block;
   margin: auto;
 }
 
-.guest-identity, .content-main .guests-card .guest-identity {
+.guest-identity,
+.content-main .guests-card .guest-identity {
   display: block;
   max-width: none;
   line-height: 1.25;
@@ -1512,7 +1517,7 @@ body {
   margin-top: 1em;
 }
 
-.process img{
+.process img {
   width: 100%;
   max-width: 100%;
   border: 1px solid #eee;
@@ -1532,7 +1537,14 @@ body {
   text-align: center;
   overflow: hidden;
 }
-.content-main.content-main.record figure + figure {
+
+@media (max-width: 768px) {
+  .content-main.record figure {
+    width: 100%;
+  }
+}
+
+.content-main.content-main.record figure+figure {
   margin-top: 1em;
 }
 
